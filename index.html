@@ -8,7 +8,7 @@
 		h1 {
 			text-align: center;
 			font-family: Cairo;
-			font-size: 18px;
+			font-size: 30px;
 		}
 		form {
 			display: flex;
@@ -20,12 +20,19 @@
 		input {
 			margin-bottom: 10px;
 			padding: 5px;
-			font-size: 16px;
+			font-size: 24px;
 			border-radius: 5px;
 			border: none;
 			width: 200px;
 			text-align: center;
 		}
+                label {
+			display: block;
+                        font-family: Cairo;
+			margin-bottom: 5px;
+			font-size: 24px;
+			color: #333;
+		} 
 		button {
 			background-color: #4CAF50;
 			color: white;
@@ -34,16 +41,53 @@
 			border: none;
 			border-radius: 5px;
 			cursor: pointer;
-			font-size: 16px;
+			font-size: 24px;
 		}
 	</style>
+           <style>
+input[type=text], input[type=password] {
+    background-color: #f2f2f2;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type=text]:hover, input[type=password]:hover {
+    background-color: #ddd;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3e8e41;
+}
+</style>
+            
 </head>
 <body>
 	<h1>تسجيل الدخول</h1>
 	<form>
-		<label for="username">اسم المستخدم:</label>
+		<label for="username">(اسم المستخدم)</label>
 			<input type="text" id="username" name="username" placeholder="ادخل اسم المستخدم" required>
-		<label for="password">كلمة المرور:</label>
+		<label for="password">(كلمة المرور)</label>
 			<input type="password" id="password" name="password" placeholder="ادخل كلمة المرور" required>
 		<button type="submit">تسجيل الدخول</button>
 	</form>
